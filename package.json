@@ -1,0 +1,47 @@
+{
+  "name": "web-app-starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "jest": {
+    "projects": [
+      {
+        "displayName": "dom",
+        "testEnvironment": "jsdom",
+        "testMatch": [
+          "**/public/**/*.test.js?(x)"
+        ]
+      },
+      {
+        "displayName": "node",
+        "testEnvironment": "node",
+        "testMatch": [
+          "**/__tests__/**/*.test.js?(x)"
+        ]
+      }
+    ],
+    "testEnvironment": "node",
+    "transform": {
+      "^.+\\.js?$": "babel-jest"
+    }
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.24.7",
+    "@babel/preset-env": "^7.24.7",
+    "babel-jest": "^29.7.0",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "supertest": "^7.0.0"
+  }
+}

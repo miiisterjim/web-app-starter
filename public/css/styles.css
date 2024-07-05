@@ -1,0 +1,17 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f0f0f0;
+}
+
+h1 {
+  margin-bottom: 50px;
+}
+
+.container {
+  margin-top: 50px;
+}
+
+#name-display {
+  margin-top: 20px;
+}
