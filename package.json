@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "node server.js",
     "test": "jest"
   },
   "author": "",
@@ -13,7 +14,7 @@
     "projects": [
       {
         "displayName": "dom",
-        "testEnvironment": "jsdom",
+        "testEnvironment": "jest-environment-jsdom-global",
         "testMatch": [
           "**/public/**/*.test.js?(x)"
         ]
@@ -22,7 +23,7 @@
         "displayName": "node",
         "testEnvironment": "node",
         "testMatch": [
-          "**/__tests__/**/*.test.js?(x)"
+          "**/__api-tests__/**/*.test.js?(x)"
         ]
       }
     ],
@@ -42,6 +43,7 @@
     "babel-jest": "^29.7.0",
     "jest": "^29.7.0",
     "jest-environment-jsdom": "^29.7.0",
+    "jest-environment-jsdom-global": "^4.0.0",
     "supertest": "^7.0.0"
   }
 }

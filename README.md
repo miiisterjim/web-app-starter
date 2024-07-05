@@ -43,6 +43,7 @@ Open your browser and navigate to http://localhost:3000 to view the app.
 ```
 web-app-starter/
 │
+├── __tests__/
 ├── public/
 │   ├── css/
 │   │   └── styles.css
