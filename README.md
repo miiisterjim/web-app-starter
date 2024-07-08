@@ -43,12 +43,13 @@ Open your browser and navigate to http://localhost:3000 to view the app.
 ```
 web-app-starter/
 │
-├── __tests__/
+├── __api-tests__/
 ├── public/
 │   ├── css/
 │   │   └── styles.css
 │   ├── js/
-│   │   └── main.js
+|   |   |── __tests__/
+│   │   |── main.js
 │   └── index.html
 │
 ├── server.js
@@ -56,7 +57,8 @@ web-app-starter/
 
 ```
 
-- public/: Contains static files served by the Express server.
+- __api-tests__/: Contains tests relating to the backend api definition in server.js
+- public/: Contains static files served by the Express server and associated tests (public/js/__tests__).
 - server.js: The main server file that handles API requests.
 - package.json: Lists project dependencies and scripts.
 
